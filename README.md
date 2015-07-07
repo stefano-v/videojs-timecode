@@ -13,11 +13,12 @@ Options:
 ## Example of usage
 
 Add this code after your videoJS video tag:
-    <script src="/Scripts/videojs/videojs.timecode.js"></script>
-    <script type="text/javascript">
-        videojs("VideoPlayer").ready(function(){
-            this.timecode({
-                timeFormat: 'PAL'
-            });
-        });
-    </script>
+
+	<script src="/Scripts/videojs/videojs.timecode.js"></script>
+	<script type="text/javascript">
+	    videojs("VideoPlayer").ready(function(){
+	    this.timecode({
+		    timeFormat: 'PAL'
+		    });
+	    });
+	</script>
