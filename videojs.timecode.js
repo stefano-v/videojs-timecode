@@ -43,7 +43,7 @@
 
 //Converts time in seconds to a broadcast timecode
 //timeFormat: 'PAL', 'PALp', 'NTSC', 'STANDARD'
-function MillToTimecode(seconds, timeFormat) {
+function MillToTimecode(seconds, TimeFormat) {
 
     //alert(milliseconds);
 
