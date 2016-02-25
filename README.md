@@ -6,7 +6,9 @@ Options:
    * PAL
    * PALp
    * NTSC
+   * NTSCp
    * STANDARD
+   * Any other frame rate, given in numeric form (i.e. 12, 23.976, etc.)
 
 *Requires jQuery, any version*
 
