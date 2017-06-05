@@ -63,13 +63,20 @@ function MillToTimecode(seconds, TimeFormat) {
         var f = Math.floor((seconds * 1000) / 40);
     }
     else if (TimeFormat == 'NTSC') {
-        var f = Math.floor((seconds * 1000) / (100 / 3));
+        var f = Math.floor((seconds * 30000) / 1001);
     }
     else if (TimeFormat == 'PALp') {
         var f = Math.floor((seconds * 1000) / 20);
     }
+    else if (TimeFormat == 'NTSCp') {
+        var f = Math.floor((seconds * 60000) / 1001);
+    }
     else if (TimeFormat == 'STANDARD') {
         var f = Math.floor(seconds * 1000);
+    }
+    else {
+        // assume frame rate is given in numeric form
+        var f = Math.floor(seconds * TimeFormat);
     }
 
     // Check if we need to show hours
